@@ -1,0 +1,74 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.recipe {
+  width: 25%;
+  background: #ffffff;
+  border: 1px solid #808080;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.recipeImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.recipeText {
+  text-align: center;
+  font-family: "Rubik";
+  font-size: 20px;
+  margin: 10px 0px;
+  font-weight: 600;
+}
+.recipe button {
+  width: 95%;
+  background-color: rgb(42, 40, 40);
+  color: white;
+  margin: 0px 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.list {
+  font-family: "Rubik";
+  font-size: 20px;
+  margin: 10px 0px;
+  font-weight: 600;
+}
+.modalList {
+  background-color: #f8d312;
+  padding: 10px;
+}
+.no {
+  font-family: "Rubik";
+  font-size: 50px;
+  margin: 10px 0px;
+  font-weight: 600;
+  text-align: center;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .recipe {
+    width: 33%;
+  }
+}
+@media (max-width: 600px) {
+  .recipe {
+    width: 100%;
+  }
+  .list {
+    font-size: 16px;
+  }
+}
